@@ -12,48 +12,48 @@ Write-Output "Uninstalling default apps"
 $apps = @(
     # default Windows 10 apps
     "Microsoft.3DBuilder"
-    "Microsoft.Appconnector"
+    # "Microsoft.Appconnector"
     "Microsoft.BingFinance"
     "Microsoft.BingNews"
     "Microsoft.BingSports"
     "Microsoft.BingTranslator"
     "Microsoft.BingWeather"
-    #"Microsoft.FreshPaint"
-    "Microsoft.GamingServices"
+    # "Microsoft.FreshPaint"
+    # "Microsoft.GamingServices"
     "Microsoft.Microsoft3DViewer"
-    "Microsoft.MicrosoftOfficeHub"
+    # "Microsoft.MicrosoftOfficeHub"
     "Microsoft.MicrosoftPowerBIForWindows"
     "Microsoft.MicrosoftSolitaireCollection"
-    #"Microsoft.MicrosoftStickyNotes"
+    # "Microsoft.MicrosoftStickyNotes"
     "Microsoft.MinecraftUWP"
     "Microsoft.NetworkSpeedTest"
     "Microsoft.Office.OneNote"
     "Microsoft.People"
     "Microsoft.Print3D"
-    "Microsoft.SkypeApp"
+    # "Microsoft.SkypeApp"
     "Microsoft.Wallet"
-    #"Microsoft.Windows.Photos"
-    "Microsoft.WindowsAlarms"
-    #"Microsoft.WindowsCalculator"
-    "Microsoft.WindowsCamera"
-    "microsoft.windowscommunicationsapps"
-    "Microsoft.WindowsMaps"
+    # "Microsoft.Windows.Photos"
+    # "Microsoft.WindowsAlarms"
+    # "Microsoft.WindowsCalculator"
+    # "Microsoft.WindowsCamera"
+    # "microsoft.windowscommunicationsapps"         # Mail & Calendar
+    # "Microsoft.WindowsMaps"
     "Microsoft.WindowsPhone"
-    "Microsoft.WindowsSoundRecorder"
-    #"Microsoft.WindowsStore"   # can't be re-installed
+    # "Microsoft.WindowsSoundRecorder"              # Voice Recorder
+    # "Microsoft.WindowsStore"                      # Can't be re-installed
     "Microsoft.Xbox.TCUI"
     "Microsoft.XboxApp"
     "Microsoft.XboxGameOverlay"
     "Microsoft.XboxGamingOverlay"
     "Microsoft.XboxSpeechToTextOverlay"
     "Microsoft.YourPhone"
-    "Microsoft.ZuneMusic"
-    "Microsoft.ZuneVideo"
+    # "Microsoft.ZuneMusic"
+    # "Microsoft.ZuneVideo"
 
     # Threshold 2 apps
     "Microsoft.CommsPhone"
-    "Microsoft.ConnectivityStore"
-    "Microsoft.GetHelp"
+    # "Microsoft.ConnectivityStore"                 # WiFi App
+    # "Microsoft.GetHelp"
     "Microsoft.Getstarted"
     "Microsoft.Messaging"
     "Microsoft.Office.Sway"
@@ -62,7 +62,7 @@ $apps = @(
 
     # Creators Update apps
     "Microsoft.Microsoft3DViewer"
-    #"Microsoft.MSPaint"
+    # "Microsoft.MSPaint"
 
     #Redstone apps
     "Microsoft.BingFoodAndDrink"
@@ -72,7 +72,7 @@ $apps = @(
 
     # Redstone 5 apps
     "Microsoft.MixedReality.Portal"
-    "Microsoft.ScreenSketch"
+    # "Microsoft.ScreenSketch"                      # Snip & Sketch
     "Microsoft.XboxGamingOverlay"
     "Microsoft.YourPhone"
 
@@ -107,7 +107,7 @@ $apps = @(
     "ShazamEntertainmentLtd.Shazam"
     "SlingTVLLC.SlingTV"
     "SpotifyAB.SpotifyMusic"
-    #"TheNewYorkTimes.NYTCrossword"
+    "TheNewYorkTimes.NYTCrossword"
     "ThumbmunkeysLtd.PhototasticCollage"
     "TuneIn.TuneInRadio"
     "WinZipComputing.WinZipUniversal"
@@ -119,13 +119,13 @@ $apps = @(
     "king.com.CandyCrushSodaSaga"
 
     # apps which cannot be removed using Remove-AppxPackage
-    #"Microsoft.BioEnrollment"
-    #"Microsoft.MicrosoftEdge"
-    #"Microsoft.Windows.Cortana"
-    #"Microsoft.WindowsFeedback"
-    #"Microsoft.XboxGameCallableUI"
-    #"Microsoft.XboxIdentityProvider"
-    #"Windows.ContactSupport"
+    # "Microsoft.BioEnrollment"
+    # "Microsoft.MicrosoftEdge"
+    # "Microsoft.Windows.Cortana"
+    # "Microsoft.WindowsFeedback"
+    # "Microsoft.XboxGameCallableUI"
+    # "Microsoft.XboxIdentityProvider"
+    # "Windows.ContactSupport"
 
     # apps which other apps depend on
     "Microsoft.Advertising.Xaml"
